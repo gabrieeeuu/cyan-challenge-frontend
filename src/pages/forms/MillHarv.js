@@ -41,12 +41,12 @@ class MillHarv extends Component {
                             {this.state.error}
                         </Alert>}
                         <FormGroup>
-                            <Label for="code">Code</Label>
+                            <Label for="millHarvId">Harvest Id</Label>
                             <Input
-                                type="text"
+                                type="number"
                                 name="code"
-                                id="millHarvCode"
-                                placeholder="Ex: harv0 (white spaces will be removed)"
+                                id="millHarvId"
+                                placeholder="Ex: 23"
                                 style={{textTransform: 'lowercase'}}
                                 onChange={e => this.setState({ code: e.target.value.replace(/\s/g,'') })}
                             />

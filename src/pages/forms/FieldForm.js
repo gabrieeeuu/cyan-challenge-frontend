@@ -39,8 +39,8 @@ class FieldForm extends Component {
 
         if (latitude &&
             latitude.match(/^[+-]?\d{1,}\.\d{4}?$/) &&
-            parseFloat(latitude) <= 100 &&
-            parseFloat(latitude) >= -100) {
+            parseFloat(latitude) <= 90 &&
+            parseFloat(latitude) >= -90) {
             this.setState(() => ({latitude: latitude, latIsOk: true}));
         } else {
             this.setState({latIsOk: false})
@@ -52,8 +52,8 @@ class FieldForm extends Component {
 
         if (longitude &&
             longitude.match(/^[+-]?\d{1,}\.\d{4}?$/) &&
-            parseFloat(longitude) <= 100 &&
-            parseFloat(longitude) >= -100) {
+            parseFloat(longitude) <= 180 &&
+            parseFloat(longitude) >= -180) {
             this.setState(() => ({longitude: longitude, lonIsOk: true}));
         } else {
             this.setState({lonIsOk: false})

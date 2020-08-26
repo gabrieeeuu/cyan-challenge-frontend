@@ -32,6 +32,8 @@ class Fields extends Component{
 
     render(){
 
+
+
         const fieldList = (this.state.fields).map(field => {
             return <tr key={field.id}>
                 <td style={{whiteSpace: 'nowrap'}}>{field.id}</td>
@@ -39,7 +41,7 @@ class Fields extends Component{
                 <td style={{whiteSpace: 'nowrap'}}>{field.longitude}</td>
                 <td>
                     <ButtonGroup>
-                        <Button outline size="sm" color="primary" tag={Link} to={"/fields/"} disabled>View</Button>
+                        <Button outline size="sm" color="primary" target="_blank" tag={Link} to={"/map/13/"+field.latitude+"/"+field.longitude} >Map</Button>
                     </ButtonGroup>
                 </td>
             </tr>

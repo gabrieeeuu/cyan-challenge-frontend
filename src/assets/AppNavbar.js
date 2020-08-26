@@ -58,7 +58,10 @@ export default class AppNavbar extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="https://github.com/gabrieeeuu/cyan_challenge" target="_blank">Github</NavLink>
+                            <NavLink href="https://github.com/gabrieeeuu/cyan_challenge_frontend" target="_blank">Front-End</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/gabrieeeuu/cyan_challenge_backend" target="_blank">Back-End</NavLink>
                         </NavItem>
                         <NavItem>
                             {showLogout(this.state.name)}

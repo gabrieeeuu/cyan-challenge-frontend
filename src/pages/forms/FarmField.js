@@ -41,7 +41,7 @@ class FarmField extends Component {
                             {this.state.error}
                         </Alert>}
                         <FormGroup>
-                            <Label for="code">Field Code:</Label>
+                            <Label for="code">Field Id:</Label>
                             <Input
                                 type="text"
                                 name="code"

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
+import ShowMap from './assets/Map'
+
 import Home from './pages/Home';
 
 import Mills from './pages/Mills';
@@ -72,6 +74,8 @@ const Routes = () => (
             <PrivateRoute path='/mill/harv/:name' exact={true} component={MillHarv}/>
             <PrivateRoute path='/harv/farm/:code' exact={true} component={HarvFarm}/>
             <PrivateRoute path='/farm/field/:code' exact={true} component={FarmField}/>
+
+            <PrivateRoute path='/map/:zoom/:lat/:lng' exact={true} component={ShowMap}/>
 
             <Route path="*" component={() => <h1>Page not found</h1>} />
        

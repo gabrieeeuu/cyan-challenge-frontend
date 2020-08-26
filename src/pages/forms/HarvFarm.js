@@ -41,14 +41,13 @@ class HarvFarm extends Component {
                             {this.state.error}
                         </Alert>}
                         <FormGroup>
-                            <Label for="code">Code</Label>
+                            <Label for="harvFarmId">Farm Id</Label>
                             <Input
-                                type="text"
+                                type="number"
                                 name="code"
-                                id="harvFarmCode"
-                                placeholder="Ex: farm0 (white spaces will be removed)"
-                                style={{textTransform: 'lowercase'}}
-                                onChange={e => this.setState({ code: e.target.value.replace(/\s/g,'') })}
+                                id="harvFarmId"
+                                placeholder="Ex: 11"
+                                onChange={e => this.setState({ code: e.target.value })}
                             />
                         </FormGroup>
                         <Button outline color="success" type="submit">Submit</Button>
