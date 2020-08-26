@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fullstack Challenge
 
-## Available Scripts
+# Context
 
-In the project directory, you can run:
+The objective of this challenge is to create a web project to register units of a sugarcane mill on a database. We hope that by doing this challenge you will also learn a little bit about our market: digital agriculture 4.0.
 
-### `yarn start`
+# Requirements
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Create a web project on a cloud service of your choice (AWS, Heroku, etc) that allows users to register Mills (usinas), Harvests (safras), Farms (fazendas) and Fields (talhoes), and show all the fields according to a filter.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Rules:
+    1. The Mill must have a name and should be able to have multiple Harvests;
+    2. The Harvest must have a code, start and end date, and should be able to have multiple Farms;
+    3. Farms must have a code, name, and should be able to have multiple fields;
+    4. Fields must have a code and GPS coordinates (latitude and longitude).
 
-### `yarn test`
+- You must create options to register Mills, Harvests, Farms and Fields.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When you insert a new Mill, Harvest, Farm or Field on the database, you should send an alert to all users and show the data of the respective new entity saved on database. You must to use WEB SOCKET for this task.
 
-### `yarn build`
+- You must create a filter by Mill name, Harvest start and end date, Harvest code, Farm name and code, and Field code.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- You must show images in the map representing the fields (Use an image of your choice) according to the filter made by the user.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- You must create a simple interface with a good user experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- You must create unit and integrated tests.
 
-### `yarn eject`
+- You must use one of this group of technologies:    
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    1. NODE JS, Express JS, Sequelize JS, Postgre with Postgis, React js;
+    2. Java, Spring boot, Spring data, Postgre with Postgis, React js.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- You must publish this project at https://github.com/.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- You must publish this project in a cloud of your choice AWS, HEROKU, etc) and send us a link to enter and test your project like an user.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Send us an email before you start the challange:   
 
-## Learn More
+    * Email: cyan-dev@modclima.com.br;
+    * Subject: FULLSTACK CHALLENGE :: Your_Name ;
+    * Message: Hi, I'm starting the challenge.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Rating
+The challenge should be sent to "philipp.edson@cyan-agro.com" and "cyan-dev@modclima.com.br" with the link to the Github repository;
+We will judge your service's architecture, code quality, understanding of business rules, and how prepared this service would be for deploying to a production environment.
+After we analyze your challenge, we will call you to schedule a presentation of your challenge and interview with the team. We will discuss the decisions you have made also. We believe that 1 week is a good amount of time to do the challenge, but we know that not everyone has the same level of
+availability. Let us know if you need more time.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Tips
+If you can, please try to implement:
 
-### Code Splitting
+- Unit and/or integration tests;
+- Detailed documentation;
+- CI.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Feel free to contact us if you have any doubts! If you want suggestions of which stack you should use, you can write us at cyan-dev@modclima.com.br.
 
-### Analyzing the Bundle Size
+Good luck!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Cyan devs
+PS: Do not forget to write how we can run your code!
