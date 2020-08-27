@@ -1,8 +1,5 @@
 # Fullstack Challenge
 
-
-### [Context](https://bitbucket.org/modclima/challenge.git/)
-
 ## Front-End application
   A ReactJs App thats uses React Router DOM, Reactstrap, React Leaflet and Axios
   
