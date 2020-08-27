@@ -27,7 +27,7 @@
   
   Sendo um ReactJs App, esse repositório necessita de 'npm' ou 'yarn' para sua execução.
   
-  ## 'npm/yarn install'
+  #### 'npm/yarn install'
   
   ```
   C:\Users\@user\cyan_challenge_frontend> npm install
